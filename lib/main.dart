@@ -259,7 +259,7 @@ class _ArithmeticDrillPageState extends State<ArithmeticDrillPage> {
   }
 
   
-  void _showSkipDialog() {  //
+  void _showSkipDialog() {  
     showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -311,29 +311,29 @@ class _ArithmeticDrillPageState extends State<ArithmeticDrillPage> {
             padding: const EdgeInsets.all(16.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 Padding(
-                  padding: const EdgeInsets.only(top: 0.0),
+                  padding: const EdgeInsets.only(top: 120.0),
                   child: SizedBox(
-                    width: 200, 
+                    width: 250, 
                     child: LinearProgressIndicator(
                       minHeight: 10.0,
                       value: (_currentProblemIndex + 1) / 10,
                     ),
                   ),
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 15),
                 Text(
                   'Problem ${_currentProblemIndex + 1}:',
                   style: const TextStyle(fontSize: 24),
                 ),
-                const SizedBox(height: 10),
+                const SizedBox(height: 1),
                 Text(
                   _problems[_currentProblemIndex],
                   style: const TextStyle(fontSize: 24),
                 ),
-                const SizedBox(height: 20.0),
+                const SizedBox(height: 10.0),
                 SizedBox(
                   width: 200, 
                   child: TextField(
