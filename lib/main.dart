@@ -314,7 +314,7 @@ class _ArithmeticDrillPageState extends State<ArithmeticDrillPage> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 Padding(
-                  padding: const EdgeInsets.only(top: 120.0),
+                  padding: const EdgeInsets.only(top: 121.0),
                   child: SizedBox(
                     width: 250, 
                     child: LinearProgressIndicator(
